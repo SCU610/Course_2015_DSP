@@ -1,0 +1,35 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~C5402AudioSystem.PrjPCB|ReportField=ProjectFullPath~f:\Leo\Documents\Altium\Projects\C5402 Audio System\C5402AudioSystem.PrjPCB|ReportField=Title~Bill of Materials For Project [C5402AudioSystem.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~139|ReportField=ReportTime~15:51:42|ReportField=ReportDate~2015/6/30|ReportField=ReportDateTime~2015/6/30 15:51:42|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~崔 敖; 李尚文|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2015/6/30|ReportField=CurrentTime~15:51:29|ReportField=Date~|ReportField=DocumentFullPathAndName~f:\Leo\Documents\Altium\Projects\C5402 Audio System\PART1_NC.SchDoc|ReportField=DocumentName~PART1_NC.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2015/6/23|ReportField=Organization~|ReportField=ProjectName~C5402AudioSystem.PrjPCB|ReportField=Revision~B1.0|ReportField=Rule~|ReportField=SheetNumber~1|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~非连接器件引脚|ReportField=PageSetup~Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9|ReportField=Range2~.19|ReportField=DataSourceFileName~C5402AudioSystem.PrjPCB|ReportField=DataSourceFullPath~f:\Leo\Documents\Altium\Projects\C5402 Audio System\C5402AudioSystem.PrjPCB
+Cap Semi|贴片电容 1608|C1, C2, C3, C4, C5, C6, C7, C8, C9, C13, C14, C15, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36, C37, C38, C39, C40, C41, C42, C43, C44, C46, C47, C48, C49, C50, C51|1608[0603]|Cap Semi|46
+Cap Tan|贴片钽电容 C0805|C10, C11, C12, C16, C45, C52, C53, C54, C55, C56, C57, C58|C0805|Cap Pol3|12
+HSMQ-C191|Top Mount Low Profile Chip LED, Green|D1, D2, D3, D4|1.6X0.8X0.6|HSMQ-C191|4
+Supply & Data USB Socket|USB On-The-Go (OTG) Mini-B Receptacle, Right Angle, SMT, 0.80mm (.031") Pitch, Solder Tabs with Back Cover, Recessed Type|J1|481900001|0481900001|1
+External Int. Socket|Header, 3-Pin, Dual row|J2|HDR2X3_CEN|Header 3X2A|1
+Supply USB Socket|USB On-The-Go (OTG) Mini-B Receptacle, Right Angle, SMT, 0.80mm (.031") Pitch, Solder Tabs with Back Cover, Recessed Type|J3|481900001|0481900001|1
+JTAG Socket|Header, 7-Pin, Dual row|J4|HDR2X7|JTAG 14PIN CONN|1
+TSH-3864D-PINK|Phone Jack, PJ-386D Series, Right Angle, SM, 4-Conductor Open Circuit|J5|PJ-386D|TSH-3864D|1
+TSH-3864D-BULE|Phone Jack, PJ-386D Series, Right Angle, SM, 4-Conductor Open Circuit|J6|PJ-386D|TSH-3864D|1
+MP/MC JUMPER|Header, 3-Pin|J7|HDR1X3|Header 3|1
+TSH-3864D-GREEN|Phone Jack, PJ-386D Series, Right Angle, SM, 4-Conductor Open Circuit|J8|PJ-386D|TSH-3864D|1
+TSH-3864D-RED|Phone Jack, PJ-386D Series, Right Angle, SM, 4-Conductor Open Circuit|J9|PJ-386D|TSH-3864D|1
+Addr. Bus Socket|Header, 10-Pin, Dual row|J10|HDR2X10_CEN|Header 10X2A|1
+Data Bus Socket|Header, 8-Pin, Dual row|J11|HDR2X8_CEN|Header 8X2A|1
+Mem. Ctrl. Socket|Header, 6-Pin, Dual row|P1|HDR2X6_CEN|Header 6X2A|1
+DSP CLK Socket|Header, 3-Pin|P2|HDR1X3|Header 3|1
+DSP SPI 0 Socket|Header, 3-Pin, Dual row|P3|HDR2X3_CEN|Header 3X2A|1
+DSP SPI 1 Socket|Header, 3-Pin, Dual row|P4|HDR2X3_CEN|Header 3X2A|1
+MCU Debug Socket|Header, 5-Pin, Dual row|P5|HDR2X5|Header 5X2|1
+HPI Jumper|Header, 5-Pin, Dual row|P6|HDR2X5_CEN|Header 5X2A|1
+HPI Socket|Header, 10-Pin, Dual row|P7|HDR2X10_CEN|Header 10X2A|1
+Res3|贴片电阻 0603|R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39, R40, R41|J1-0603|Res3|41
+A6H-4101|Ultra-Low Profile, Half-Pitch, SM, Slide DIP Switch, Flat Actuator, White Striker, 4 Position, SPST, Std. Model|S1, S8|A6H-4|A6H-4101|2
+KSS221GLFS|Switch, Subminiature Side-Actuated Tact, SMT, KSS Series, Std Actuator, 2 Gull Wing Leads, SPST, 2N Force, Silver Contact|S2, S3, S4, S5, S7|KSS-2G|KSS221GLFS|5
+IT-2175|Tactile Switch, DPST; Thru-Hole; Vertical; Rating DC 12V, 50mA (max)|S6, S9|IT-2175|IT-2175|2
+TMS320VC5402|TMS320VC5402|U1|TMS320VC5401_PQFP144|TMS320VC5402|1
+LM1117MPX-1.8|800mA Low-Dropout Linear Regulator, 4-pin SOT-223|U2|MP04A_N|LM1117MPX-1.8|1
+LM1117MPX-3.3|800mA Low-Dropout Linear Regulator, 4-pin SOT-223|U3|MP04A_N|LM1117MPX-3.3|1
+TLV320AIC23|TLV320AIC23|U4|TSOP65P640X120-28N|TLV320AIC23|1
+C8051F320|C8051F320|U5|TQFP80P900X900X160-32N|C8051F320|1
+MAX6835||U6|SC70-4|MAX6835|1
+32SMX 20MHZ 1.8V|Surface Mount Quartz Crystal|Y1|32SMX|32SMX|1
+32SMX 16.9344MHZ 3.3V|Surface Mount Quartz Crystal|Y2|32SMX|32SMX|1
+32SMX 20MHZ 3.3V|Surface Mount Quartz Crystal|Y3|32SMX|32SMX|1

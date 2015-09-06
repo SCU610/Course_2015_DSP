@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\Users\Lishangwen\Desktop\DSP_course\test_code\led_contorl\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="Led_control.asm"
+Source="vectors.asm"
+Source="Timer.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\Led_control.map" -o".\Debug\Led_control.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\Led_control.map" -o".\Release\Led_control.out" -w -x
+
+["Timer.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["Timer.cmd" Settings: "Release"]
+LinkOrder=1
+

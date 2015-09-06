@@ -1,0 +1,39 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="McBSP"
+ProjectDir="C:\Users\Lishangwen\Desktop\DSP_course\Code\McBSP\McBSP\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="CVECTORS.ASM"
+Source="main.c"
+Source="McBSP.c"
+Source="rts.lib"
+Source="INRAM.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\Users\Lishangwen\Desktop\DSP_course\Code\McBSP\McBSP\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-q -o2 -fr"C:\Users\Lishangwen\Desktop\DSP_course\Code\McBSP\McBSP\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\McBSP.map" -o".\Debug\McBSP.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\McBSP.map" -o".\Release\McBSP.out" -x
+
