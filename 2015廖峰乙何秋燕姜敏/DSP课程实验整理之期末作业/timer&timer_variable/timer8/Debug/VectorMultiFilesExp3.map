@@ -1,0 +1,148 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Wed Jul 01 22:18:51 2015
+
+OUTPUT FILE NAME:   <./Debug/VectorMultiFilesExp3.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000356
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: intvectors              00000280   00000080  00000064  RWIX
+         EPROM                   00000300   00000100  00000070  RWIX
+
+PAGE  1: SPRAM                   00000060   00000020  00000001  RWIX
+         DARAM                   00000080   00000100  00000080  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvectors 
+*          0    00000280    00000064     
+                  00000280    00000064     IntVectors.obj (.intvectors)
+
+.data      0    00000300    00000000     UNINITIALIZED
+
+.text      0    00000300    00000070     
+                  00000300    00000056     IntSer.obj (.text)
+                  00000356    0000001a     IntsExp.obj (.text)
+
+.bss       1    00000060    00000001     UNINITIALIZED
+                  00000060    00000001     IntsExp.obj (.bss)
+
+STACK      1    00000080    00000080     UNINITIALIZED
+                  00000080    00000080     IntsExp.obj (STACK)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000060   .bss
+00000300   .data
+00000300   .text
+00000031   PRD1
+00000032   TCR1
+ffffffff   ___binit__
+00000060   ___bss__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+00000300   ___data__
+00000300   ___edata__
+00000061   ___end__
+00000370   ___etext__
+ffffffff   ___pinit__
+00000300   ___text__
+00000000   __lflags
+00000356   _c_int00
+00000300   _c_int01_NMI
+00000302   _c_int02_SINT17
+00000304   _c_int03_SINT18
+00000306   _c_int04_SINT19
+00000308   _c_int05_SINT20
+0000030a   _c_int06_SINT21
+0000030c   _c_int07_SINT22
+0000030e   _c_int08_SINT23
+00000310   _c_int09_SINT24
+00000312   _c_int10_SINT25
+00000314   _c_int11_SINT26
+00000316   _c_int12_SINT27
+00000318   _c_int13_SINT28
+0000031a   _c_int14_SINT29
+0000031c   _c_int15_SINT30
+0000031e   _c_int16_INT0
+00000320   _c_int17_INT1
+00000322   _c_int18_INT2
+00000324   _c_int19_TINT0
+00000339   _c_int20_BRINT0
+0000033b   _c_int21_BXINT0
+0000033d   _c_int22_SINT6
+0000033f   _c_int23_TINT1
+00000354   _c_int24_INT3
+ffffffff   binit
+ffffffff   cinit
+00000300   edata
+00000061   end
+00000370   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000031   PRD1
+00000032   TCR1
+00000060   ___bss__
+00000060   .bss
+00000061   ___end__
+00000061   end
+00000300   ___edata__
+00000300   _c_int01_NMI
+00000300   ___text__
+00000300   edata
+00000300   .text
+00000300   .data
+00000300   ___data__
+00000302   _c_int02_SINT17
+00000304   _c_int03_SINT18
+00000306   _c_int04_SINT19
+00000308   _c_int05_SINT20
+0000030a   _c_int06_SINT21
+0000030c   _c_int07_SINT22
+0000030e   _c_int08_SINT23
+00000310   _c_int09_SINT24
+00000312   _c_int10_SINT25
+00000314   _c_int11_SINT26
+00000316   _c_int12_SINT27
+00000318   _c_int13_SINT28
+0000031a   _c_int14_SINT29
+0000031c   _c_int15_SINT30
+0000031e   _c_int16_INT0
+00000320   _c_int17_INT1
+00000322   _c_int18_INT2
+00000324   _c_int19_TINT0
+00000339   _c_int20_BRINT0
+0000033b   _c_int21_BXINT0
+0000033d   _c_int22_SINT6
+0000033f   _c_int23_TINT1
+00000354   _c_int24_INT3
+00000356   _c_int00
+00000370   etext
+00000370   ___etext__
+ffffffff   ___c_args__
+ffffffff   ___binit__
+ffffffff   pinit
+ffffffff   ___pinit__
+ffffffff   ___cinit__
+ffffffff   cinit
+ffffffff   binit
+
+[47 symbols]

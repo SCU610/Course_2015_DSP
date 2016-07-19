@@ -1,0 +1,5 @@
+-z -c -m"./Debug/VectorMultiFilesExp3.map" -o"./Debug/VectorMultiFilesExp3.out" -w -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"E:\DSP\DSP2015\dspexample\timer8\IntsExp.cmd"
+"E:\DSP\DSP2015\dspexample\timer8\Debug\IntSer.obj"
+"E:\DSP\DSP2015\dspexample\timer8\Debug\IntsExp.obj"
+"E:\DSP\DSP2015\dspexample\timer8\Debug\IntVectors.obj"

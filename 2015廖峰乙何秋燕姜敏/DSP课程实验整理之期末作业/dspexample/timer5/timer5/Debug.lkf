@@ -1,0 +1,4 @@
+-z -c -m"./Debug/timer2.map" -o"./Debug/timer2.out" -w -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"E:\DSP\DSP2015\dspexample\timer5\timer5\timer2.cmd"
+"E:\DSP\DSP2015\dspexample\timer5\timer5\Debug\timer2.obj"
+"E:\DSP\DSP2015\dspexample\timer5\timer5\Debug\Timer_Vectors.obj"

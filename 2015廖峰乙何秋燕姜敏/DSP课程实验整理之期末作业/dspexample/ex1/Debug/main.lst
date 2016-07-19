@@ -1,0 +1,234 @@
+TMS320C54x COFF Assembler PC v4.1.0 Wed Jul 01 22:31:01 2015
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+C:\Users\ADMINI~1\AppData\Local\Temp\TI5362                          PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C54x C/C++ Codegen                          PC v4.1.0 *
+       3              ;* Date/Time created: Wed Jul 01 22:31:01 2015                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --mem_model:code=near --mem_model:data=flat --quiet 
+       6                      .mmregs
+       7        0017  FP      .set    AR7
+       8                      .c_mode
+       9              
+      10              DW$CU   .dwtag  DW_TAG_compile_unit
+      11                      .dwattr DW$CU, DW_AT_name("main.c")
+      12                      .dwattr DW$CU, DW_AT_producer("TMS320C54x C/C++ Codegen PC v4.1.0 Copyright (c) 1996-2005 Texas Instr
+      13                      .dwattr DW$CU, DW_AT_stmt_list(0x00)
+      14                      .dwattr DW$CU, DW_AT_TI_VERSION(0x01)
+      15              
+      16              DW$1    .dwtag  DW_TAG_subprogram, DW_AT_name("init_dsp"), DW_AT_symbol_name("_init_dsp")
+      17                      .dwattr DW$1, DW_AT_declaration(0x01)
+      18                      .dwattr DW$1, DW_AT_external(0x01)
+      19              
+      20              DW$2    .dwtag  DW_TAG_subprogram, DW_AT_name("LED_flash"), DW_AT_symbol_name("_LED_flash")
+      21                      .dwattr DW$2, DW_AT_declaration(0x01)
+      22                      .dwattr DW$2, DW_AT_external(0x01)
+      23              ;       C:\CCStudio_v3.3\C5400\cgtools\bin\acp500.exe --keep_unneeded_types -q -D_DEBUG -IC:/CCStudio_v3.3/C5
+      24 000000               .sect   ".text"
+      25                      .global _main
+      26              
+      27              DW$3    .dwtag  DW_TAG_subprogram, DW_AT_name("main"), DW_AT_symbol_name("_main")
+      28                      .dwattr DW$3, DW_AT_low_pc(_main)
+      29                      .dwattr DW$3, DW_AT_high_pc(0x00)
+      30                      .dwattr DW$3, DW_AT_begin_file("main.c")
+      31                      .dwattr DW$3, DW_AT_begin_line(0x04)
+      32                      .dwattr DW$3, DW_AT_begin_column(0x06)
+      33                      .dwpsn  "main.c",5,1
+      34              
+      35                      .dwfde DW$CIE
+      36              
+      37              ;***************************************************************
+      38              ;* FUNCTION DEF: _main                                         *
+      39              ;***************************************************************
+      40 000000       _main:
+      41                      .dwcfa  0x0e, 1
+      42                      .dwcfa  0x80, 34, 1
+      43 000000 EEFF          FRAME     #-1
+      44                      .dwcfa  0x0e, 2
+      45                      .dwpsn  "main.c",6,2
+      46 000001 F074          CALL      #_init_dsp            ; |6| 
+         000002 0000!
+      47                      ; call occurs [#_init_dsp] ; |6| 
+      48                      .dwpsn  "main.c",7,8
+      49 000003       L1:    
+      50 000003       DW$L$_main$2$B:
+      51                      .dwpsn  "main.c",9,3
+      52 000003 F074          CALL      #_LED_flash           ; |9| 
+         000004 0000!
+      53                      ; call occurs [#_LED_flash] ; |9| 
+TMS320C54x COFF Assembler PC v4.1.0 Wed Jul 01 22:31:01 2015
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+C:\Users\ADMINI~1\AppData\Local\Temp\TI5362                          PAGE    2
+
+      54                      .dwpsn  "main.c",7,8
+      55 000005 F073          B         L1                    ; |7| 
+         000006 0003'
+      56                      ; branch occurs ; |7| 
+      57 000007       DW$L$_main$2$E:
+      58                      .dwcfa  0x0e, 1
+      59              
+      60              DW$4    .dwtag  DW_TAG_loop
+      61                      .dwattr DW$4, DW_AT_name("C:\Users\ADMINI~1\AppData\Local\Temp\TI5362:L1:1:1435761061")
+      62                      .dwattr DW$4, DW_AT_begin_file("main.c")
+      63                      .dwattr DW$4, DW_AT_begin_line(0x07)
+      64                      .dwattr DW$4, DW_AT_end_line(0x0a)
+      65              DW$5    .dwtag  DW_TAG_loop_range
+      66                      .dwattr DW$5, DW_AT_low_pc(DW$L$_main$2$B)
+      67                      .dwattr DW$5, DW_AT_high_pc(DW$L$_main$2$E)
+      68                      .dwendtag DW$4
+      69              
+      70                      .dwattr DW$3, DW_AT_end_file("main.c")
+      71                      .dwattr DW$3, DW_AT_end_line(0x0b)
+      72                      .dwattr DW$3, DW_AT_end_column(0x01)
+      73                      .dwendentry
+      74                      .dwendtag DW$3
+      75              
+      76              ;***************************************************************
+      77              ;* UNDEFINED EXTERNAL REFERENCES                               *
+      78              ;***************************************************************
+      79                      .global _init_dsp
+      80                      .global _LED_flash
+      81              
+      82              ;***************************************************************
+      83              ;* TYPE INFORMATION                                            *
+      84              ;***************************************************************
+      85              
+      86              DW$T$19 .dwtag  DW_TAG_subroutine_type
+      87                      .dwattr DW$T$19, DW_AT_language(DW_LANG_C)
+      88              
+      89                      .dwattr DW$3, DW_AT_external(0x01)
+      90                      .dwattr DW$CU, DW_AT_language(DW_LANG_C)
+      91              
+      92              ;***************************************************************
+      93              ;* DWARF CIE ENTRIES                                           *
+      94              ;***************************************************************
+      95              
+      96              DW$CIE  .dwcie 1, 34
+      97                      .dwcfa  0x0c, 17, 0
+      98                      .dwcfa  0x07, 0
+      99                      .dwcfa  0x07, 1
+     100                      .dwcfa  0x07, 2
+     101                      .dwcfa  0x07, 3
+     102                      .dwcfa  0x07, 4
+     103                      .dwcfa  0x07, 5
+     104                      .dwcfa  0x07, 6
+     105                      .dwcfa  0x07, 7
+     106                      .dwcfa  0x07, 8
+     107                      .dwcfa  0x07, 9
+TMS320C54x COFF Assembler PC v4.1.0 Wed Jul 01 22:31:01 2015
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+C:\Users\ADMINI~1\AppData\Local\Temp\TI5362                          PAGE    3
+
+     108                      .dwcfa  0x08, 10
+     109                      .dwcfa  0x07, 11
+     110                      .dwcfa  0x07, 12
+     111                      .dwcfa  0x07, 13
+     112                      .dwcfa  0x07, 14
+     113                      .dwcfa  0x08, 15
+     114                      .dwcfa  0x08, 16
+     115                      .dwcfa  0x07, 17
+     116                      .dwcfa  0x07, 18
+     117                      .dwcfa  0x07, 19
+     118                      .dwcfa  0x07, 20
+     119                      .dwcfa  0x07, 21
+     120                      .dwcfa  0x07, 22
+     121                      .dwcfa  0x07, 23
+     122                      .dwcfa  0x07, 24
+     123                      .dwcfa  0x07, 25
+     124                      .dwcfa  0x07, 26
+     125                      .dwcfa  0x07, 27
+     126                      .dwcfa  0x07, 28
+     127                      .dwcfa  0x07, 29
+     128                      .dwcfa  0x07, 30
+     129                      .dwcfa  0x07, 31
+     130                      .dwcfa  0x07, 32
+     131                      .dwcfa  0x07, 33
+     132                      .dwcfa  0x07, 34
+     133              
+     134              ;***************************************************************
+     135              ;* DWARF REGISTER MAP                                          *
+     136              ;***************************************************************
+     137              
+     138              DW$6    .dwtag  DW_TAG_assign_register, DW_AT_name("A")
+     139                      .dwattr DW$6, DW_AT_location[DW_OP_reg0]
+     140              DW$7    .dwtag  DW_TAG_assign_register, DW_AT_name("AH")
+     141                      .dwattr DW$7, DW_AT_location[DW_OP_reg1]
+     142              DW$8    .dwtag  DW_TAG_assign_register, DW_AT_name("AG")
+     143                      .dwattr DW$8, DW_AT_location[DW_OP_reg2]
+     144              DW$9    .dwtag  DW_TAG_assign_register, DW_AT_name("")
+     145                      .dwattr DW$9, DW_AT_location[DW_OP_reg3]
+     146              DW$10   .dwtag  DW_TAG_assign_register, DW_AT_name("")
+     147                      .dwattr DW$10, DW_AT_location[DW_OP_reg4]
+     148              DW$11   .dwtag  DW_TAG_assign_register, DW_AT_name("")
+     149                      .dwattr DW$11, DW_AT_location[DW_OP_reg5]
+     150              DW$12   .dwtag  DW_TAG_assign_register, DW_AT_name("B")
+     151                      .dwattr DW$12, DW_AT_location[DW_OP_reg6]
+     152              DW$13   .dwtag  DW_TAG_assign_register, DW_AT_name("BH")
+     153                      .dwattr DW$13, DW_AT_location[DW_OP_reg7]
+     154              DW$14   .dwtag  DW_TAG_assign_register, DW_AT_name("BG")
+     155                      .dwattr DW$14, DW_AT_location[DW_OP_reg8]
+     156              DW$15   .dwtag  DW_TAG_assign_register, DW_AT_name("AR0")
+     157                      .dwattr DW$15, DW_AT_location[DW_OP_reg9]
+     158              DW$16   .dwtag  DW_TAG_assign_register, DW_AT_name("AR1")
+     159                      .dwattr DW$16, DW_AT_location[DW_OP_reg10]
+     160              DW$17   .dwtag  DW_TAG_assign_register, DW_AT_name("AR2")
+     161                      .dwattr DW$17, DW_AT_location[DW_OP_reg11]
+     162              DW$18   .dwtag  DW_TAG_assign_register, DW_AT_name("AR3")
+TMS320C54x COFF Assembler PC v4.1.0 Wed Jul 01 22:31:01 2015
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+C:\Users\ADMINI~1\AppData\Local\Temp\TI5362                          PAGE    4
+
+     163                      .dwattr DW$18, DW_AT_location[DW_OP_reg12]
+     164              DW$19   .dwtag  DW_TAG_assign_register, DW_AT_name("AR4")
+     165                      .dwattr DW$19, DW_AT_location[DW_OP_reg13]
+     166              DW$20   .dwtag  DW_TAG_assign_register, DW_AT_name("AR5")
+     167                      .dwattr DW$20, DW_AT_location[DW_OP_reg14]
+     168              DW$21   .dwtag  DW_TAG_assign_register, DW_AT_name("AR6")
+     169                      .dwattr DW$21, DW_AT_location[DW_OP_reg15]
+     170              DW$22   .dwtag  DW_TAG_assign_register, DW_AT_name("AR7")
+     171                      .dwattr DW$22, DW_AT_location[DW_OP_reg16]
+     172              DW$23   .dwtag  DW_TAG_assign_register, DW_AT_name("SP")
+     173                      .dwattr DW$23, DW_AT_location[DW_OP_reg17]
+     174              DW$24   .dwtag  DW_TAG_assign_register, DW_AT_name("FP")
+     175                      .dwattr DW$24, DW_AT_location[DW_OP_reg18]
+     176              DW$25   .dwtag  DW_TAG_assign_register, DW_AT_name("BK")
+     177                      .dwattr DW$25, DW_AT_location[DW_OP_reg19]
+     178              DW$26   .dwtag  DW_TAG_assign_register, DW_AT_name("T")
+     179                      .dwattr DW$26, DW_AT_location[DW_OP_reg20]
+     180              DW$27   .dwtag  DW_TAG_assign_register, DW_AT_name("ASM")
+     181                      .dwattr DW$27, DW_AT_location[DW_OP_reg21]
+     182              DW$28   .dwtag  DW_TAG_assign_register, DW_AT_name("SXM")
+     183                      .dwattr DW$28, DW_AT_location[DW_OP_reg22]
+     184              DW$29   .dwtag  DW_TAG_assign_register, DW_AT_name("ST0")
+     185                      .dwattr DW$29, DW_AT_location[DW_OP_reg23]
+     186              DW$30   .dwtag  DW_TAG_assign_register, DW_AT_name("ST1")
+     187                      .dwattr DW$30, DW_AT_location[DW_OP_reg24]
+     188              DW$31   .dwtag  DW_TAG_assign_register, DW_AT_name("BRC")
+     189                      .dwattr DW$31, DW_AT_location[DW_OP_reg25]
+     190              DW$32   .dwtag  DW_TAG_assign_register, DW_AT_name("TC")
+     191                      .dwattr DW$32, DW_AT_location[DW_OP_reg26]
+     192              DW$33   .dwtag  DW_TAG_assign_register, DW_AT_name("PC")
+     193                      .dwattr DW$33, DW_AT_location[DW_OP_reg27]
+     194              DW$34   .dwtag  DW_TAG_assign_register, DW_AT_name("DB")
+     195                      .dwattr DW$34, DW_AT_location[DW_OP_reg28]
+     196              DW$35   .dwtag  DW_TAG_assign_register, DW_AT_name("PMST")
+     197                      .dwattr DW$35, DW_AT_location[DW_OP_reg29]
+     198              DW$36   .dwtag  DW_TAG_assign_register, DW_AT_name("RSA")
+     199                      .dwattr DW$36, DW_AT_location[DW_OP_reg30]
+     200              DW$37   .dwtag  DW_TAG_assign_register, DW_AT_name("REA")
+     201                      .dwattr DW$37, DW_AT_location[DW_OP_reg31]
+     202              DW$38   .dwtag  DW_TAG_assign_register, DW_AT_name("OVM")
+     203                      .dwattr DW$38, DW_AT_location[DW_OP_regx 0x20]
+     204              DW$39   .dwtag  DW_TAG_assign_register, DW_AT_name("FRCT")
+     205                      .dwattr DW$39, DW_AT_location[DW_OP_regx 0x21]
+     206              DW$40   .dwtag  DW_TAG_assign_register, DW_AT_name("CIE_RETA")
+     207                      .dwattr DW$40, DW_AT_location[DW_OP_regx 0x22]
+     208                      .dwendtag DW$CU
+     209              
+
+No Assembly Errors, No Assembly Warnings

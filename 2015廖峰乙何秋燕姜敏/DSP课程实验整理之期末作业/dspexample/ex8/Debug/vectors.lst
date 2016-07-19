@@ -1,0 +1,157 @@
+TMS320C54x COFF Assembler PC v4.1.0 Tue Feb 16 23:40:21 2010
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+vectors.asm                                                          PAGE    1
+
+       1              
+       2        0041  DRR11A  .set 0x41
+       3        0043  DXR11A  .set 0x43
+       4              
+       5                              .ref  _c_int00
+       6                              
+       7 000000                       .sect ".vectors"
+       8                              
+       9 000000 F273  rs: BD _c_int00
+         000001 0000!
+      10 000002 F495          nop
+      11 000003 F495          nop
+      12 000004 F4EB  nmi: rete                               ;NMI, SINT16
+      13 000005 F495      nop
+      14 000006 F495          NOP
+      15 000007 F495          NOP
+      16 000008 F273  sint17: BD _c_int00     ;SINT17
+         000009 0000!
+      17 00000a F495          NOP
+      18 00000b F495          NOP
+      19 00000c F273  sint18: BD _c_int00     ;SINT18
+         00000d 0000!
+      20 00000e F495          NOP
+      21 00000f F495          NOP
+      22 000010 F273  sint19: BD _c_int00     ;SINT19
+         000011 0000!
+      23 000012 F495          NOP
+      24 000013 F495          NOP
+      25 000014 F273  sint20: BD _c_int00     ;SINT20
+         000015 0000!
+      26 000016 F495          NOP
+      27 000017 F495          NOP
+      28 000018 F273  sint21: BD _c_int00     ;SINT21
+         000019 0000!
+      29 00001a F495          NOP
+      30 00001b F495          NOP
+      31 00001c F273  sint22: BD _c_int00     ;SINT22
+         00001d 0000!
+      32 00001e F495          NOP
+      33 00001f F495          NOP
+      34 000020 F273  sint23: BD sint23               ;SINT23
+         000021 0020+
+      35 000022 F495          NOP
+      36 000023 F495          NOP
+      37 000024 F273  sint24: BD sint24               ;SINT24
+         000025 0024+
+      38 000026 F495          NOP
+      39 000027 F495          NOP
+      40 000028 F273  sint25: BD sint25               ;SINT25
+         000029 0028+
+      41 00002a F495          NOP
+      42 00002b F495          NOP
+      43 00002c F273  sint26: BD sint26               ;SINT26
+         00002d 002C+
+      44 00002e F495          NOP
+TMS320C54x COFF Assembler PC v4.1.0 Tue Feb 16 23:40:21 2010
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+vectors.asm                                                          PAGE    2
+
+      45 00002f F495          NOP
+      46 000030 F273  sint27: BD sint27               ;SINT27
+         000031 0030+
+      47 000032 F495          NOP
+      48 000033 F495          NOP
+      49 000034 F273  sint28: BD sint28               ;SINT28
+         000035 0034+
+      50 000036 F495          NOP
+      51 000037 F495          NOP
+      52 000038 F273  sint29: BD sint29               ;SINT29
+         000039 0038+
+      53 00003a F495          NOP
+      54 00003b F495          NOP
+      55 00003c F273  sint30: BD sint30               ;SINT30
+         00003d 003C+
+      56 00003e F495          NOP
+      57 00003f F495          NOP
+      58 000040 F273  int0: BD int0                   ;INT0, SINT0
+         000041 0040+
+      59 000042 F495          NOP
+      60 000043 F495          NOP
+      61 000044 F273  int1: BD int1                   ;INT1, SINT1
+         000045 0044+
+      62 000046 F495          NOP
+      63 000047 F495          NOP
+      64 000048 F273  int2: BD int2                   ;INT2, SINT2
+         000049 0048+
+      65 00004a F495          NOP
+      66 00004b F495          NOP
+      67 00004c F273  tint0: BD _c_int00              ;TINT0, SINT3
+         00004d 0000!
+      68 00004e F495          NOP
+      69 00004f F495          NOP
+      70 000050 F273  brint0: BD _c_int00     ;BRINT0, SINT4
+         000051 0000!
+      71 000052 F495          NOP
+      72 000053 F495          NOP
+      73 000054 F273  bxint0: BD bxint0               ;BXINT0, SINT5
+         000055 0054+
+      74 000056 F495          NOP
+      75 000057 F495          NOP
+      76 000058 F273  dmac0: BD dmac0                 ;DMAC0, brint2, SINT6
+         000059 0058+
+      77 00005a F495          NOP
+      78 00005b F495          NOP
+      79 00005c F273  dmac1: BD _c_int00              ;DMAC1, bxint2, SINT7 ??
+         00005d 0000!
+      80 00005e F495          NOP
+      81 00005f F495          NOP
+      82 000060 F273  int3: BD int3                   ;INT3, SINT8
+         000061 0060+
+      83 000062 F495          NOP
+      84 000063 F495          NOP
+      85 000064 F273  hpint: BD _c_int00              ;HPINT, SINT9
+         000065 0000!
+TMS320C54x COFF Assembler PC v4.1.0 Tue Feb 16 23:40:21 2010
+
+Tools Copyright (c) 1996-2005 Texas Instruments Incorporated
+vectors.asm                                                          PAGE    3
+
+      86 000066 F495          NOP
+      87 000067 F495          NOP
+      88 000068 F273  brint1: BD brint1               ;BRINT1 or DMAC2, SINT10
+         000069 0068+
+      89 00006a F495          NOP
+      90 00006b F495          NOP
+      91              ;bxint1: BD mcbsp1              ;BXINT1 or DMAC3, SINT11
+      92 00006c F273  bxint1: BD _c_int00     ;BXINT1 or DMAC3, SINT11
+         00006d 0000!
+      93 00006e F495          NOP
+      94 00006f F495          NOP
+      95 000070 F273  dmac4: BD dmac4                 ;DMAC4, SINT12
+         000071 0070+
+      96 000072 F495          NOP
+      97 000073 F495          NOP
+      98 000074 F273  dmac5: BD dmac5                 ;DMAC5, SINT13
+         000075 0074+
+      99 000076 F495          NOP
+     100 000077 F495          NOP
+     101 000078 F273  rsvd1: BD rsvd1                 ;reserved
+         000079 0078+
+     102 00007a F495          NOP
+     103 00007b F495          NOP
+     104 00007c F273  rsvd2: BD rsvd2                 ;reserved
+         00007d 007C+
+     105 00007e F495          NOP
+     106 00007f F495          NOP
+     107              
+     108              
+     109                      .end
+
+No Assembly Errors, No Assembly Warnings

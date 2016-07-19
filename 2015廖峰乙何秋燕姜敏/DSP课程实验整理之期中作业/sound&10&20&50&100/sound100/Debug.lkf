@@ -1,0 +1,4 @@
+-z -c -m"./Debug/sound1.map" -o"./Debug/sound1.out" -w -x -i"D:/CCStudio_v3.3/C5400/xdais/lib" -i"D:/CCStudio_v3.3/C5400/csl/lib" -i"D:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"D:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"D:/CCStudio_v3.3/C5400/cgtools/lib"
+"E:\a_often\DSP program\sound100\sound1.cmd"
+"E:\a_often\DSP program\sound100\Debug\sound1.obj"
+"E:\a_often\DSP program\sound100\Debug\sound1_vec.obj"

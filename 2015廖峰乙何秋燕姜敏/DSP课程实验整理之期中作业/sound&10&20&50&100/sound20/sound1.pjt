@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\a_often\DSP program\sound1\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="sound1.asm"
+Source="sound1_vec.asm"
+Source="sound1.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\sound1.map" -o".\Debug\sound1.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\sound1.map" -o".\Release\sound1.out" -w -x
+
+["sound1.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["sound1.cmd" Settings: "Release"]
+LinkOrder=1
+

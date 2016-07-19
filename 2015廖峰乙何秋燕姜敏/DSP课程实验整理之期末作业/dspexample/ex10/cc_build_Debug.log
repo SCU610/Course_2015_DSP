@@ -1,0 +1,12 @@
+------------------------------  ex10.pjt - Debug  ------------------------------
+[common.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"D:/CCStudio_v3.3/dspexample/ex10/Debug" -ft"D:/CCStudio_v3.3/dspexample/ex10/Debug" -fb"D:/CCStudio_v3.3/dspexample/ex10/Debug" -ff"D:/CCStudio_v3.3/dspexample/ex10/Debug" -d"_DEBUG" -@"Debug.lkf" "common.c"
+
+[main.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"D:/CCStudio_v3.3/dspexample/ex10/Debug" -ft"D:/CCStudio_v3.3/dspexample/ex10/Debug" -fb"D:/CCStudio_v3.3/dspexample/ex10/Debug" -ff"D:/CCStudio_v3.3/dspexample/ex10/Debug" -d"_DEBUG" -@"Debug.lkf" "main.c"
+
+[vectors.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"D:/CCStudio_v3.3/dspexample/ex10/Debug" -ft"D:/CCStudio_v3.3/dspexample/ex10/Debug" -fb"D:/CCStudio_v3.3/dspexample/ex10/Debug" -ff"D:/CCStudio_v3.3/dspexample/ex10/Debug" -d"_DEBUG" -@"Debug.lkf" "vectors.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

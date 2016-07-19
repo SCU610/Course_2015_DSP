@@ -1,0 +1,105 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Tue Jun 30 20:46:05 2015
+
+OUTPUT FILE NAME:   <timer.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000100
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: RESEVE                  00000000   00000080  00000000  RWIX
+         VECT                    00000080   00000080  00000080  RWIX
+         PROG1                   00000100   00001200  00000014  RWIX
+
+PAGE  1: RESEVE1                 00000000   00001300  00000000  RWIX
+         DARAM2                  00001300   00000200  00000010  RWIX
+         DARAM1                  00001500   00002b00  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00000080    00000080     
+                  00000080    00000080     vectors.obj (.vectors)
+
+.cinit     0    00000100    00000000     UNINITIALIZED
+
+.switch    0    00000100    00000000     UNINITIALIZED
+
+.text      0    00000100    00000014     
+                  00000100    00000014     Led_control.obj (.text)
+
+.system    1    00001300    00000000     UNINITIALIZED
+
+.data      1    00001300    00000000     UNINITIALIZED
+
+STACK      1    00001300    00000010     UNINITIALIZED
+                  00001300    00000010     Led_control.obj (STACK)
+
+.const     1    00001500    00000000     UNINITIALIZED
+
+.bss       1    00001500    00000000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00001500   .bss
+00001300   .data
+00000100   .text
+00000111   TINT0
+ffffffff   ___binit__
+00001500   ___bss__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+00001300   ___data__
+00001300   ___edata__
+00001500   ___end__
+00000114   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+00000000   __lflags
+00000100   _c_int00
+ffffffff   binit
+ffffffff   cinit
+00001300   edata
+00001500   end
+00000114   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000100   ___text__
+00000100   .text
+00000100   _c_int00
+00000111   TINT0
+00000114   ___etext__
+00000114   etext
+00001300   ___edata__
+00001300   ___data__
+00001300   .data
+00001300   edata
+00001500   end
+00001500   .bss
+00001500   ___bss__
+00001500   ___end__
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   cinit
+ffffffff   ___cinit__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   ___c_args__
+
+[22 symbols]

@@ -1,0 +1,6 @@
+-z -a -c -o"./Debug/ex1.out" -stack200h -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"E:\DSP\DSP2015\dspexample\ex1\my.cmd"
+"E:\DSP\DSP2015\dspexample\ex1\Debug\common.obj"
+"E:\DSP\DSP2015\dspexample\ex1\Debug\main.obj"
+"E:\DSP\DSP2015\dspexample\ex1\Debug\vectors.obj"
+"E:\DSP\DSP2015\dspexample\ex1\rts.lib"

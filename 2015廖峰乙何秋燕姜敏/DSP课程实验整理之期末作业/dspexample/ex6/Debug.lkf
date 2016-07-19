@@ -1,0 +1,6 @@
+-z -a -c -o"./Debug/ex6.out" -stack200h -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"D:\CCStudio_v3.3\dspexample\ex6\my.cmd"
+"D:\CCStudio_v3.3\dspexample\ex6\Debug\common.obj"
+"D:\CCStudio_v3.3\dspexample\ex6\Debug\main.obj"
+"D:\CCStudio_v3.3\dspexample\ex6\Debug\vectors.obj"
+"D:\CCStudio_v3.3\dspexample\ex6\rts.lib"

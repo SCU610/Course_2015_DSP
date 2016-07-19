@@ -1,0 +1,98 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Tue Jun 02 20:02:22 2015
+
+OUTPUT FILE NAME:   <./Debug/sound1.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 000000b3
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: EPROM                   00000080   00001000  0000004e  RWIX
+         VECS                    0000ff80   00000080  00000002  RWIX
+
+PAGE  1: SPRAM                   00000060   00000020  00000001  RWIX
+         DARAM                   00000100   00001000  00000066  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.data      0    00000080    00000033     
+                  00000080    00000033     sound1.obj (.data)
+
+.text      0    000000b3    0000001b     
+                  000000b3    0000001b     sound1.obj (.text)
+
+.vectors   0    0000ff80    00000002     
+                  0000ff80    00000002     sound1_vec.obj (.vectors)
+
+.bss       1    00000060    00000001     UNINITIALIZED
+                  00000060    00000001     sound1.obj (.bss)
+
+a0         1    00000100    00000033     UNINITIALIZED
+                  00000100    00000033     sound1.obj (a0)
+
+xn         1    00000180    00000033     UNINITIALIZED
+                  00000180    00000033     sound1.obj (xn)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000060   .bss
+00000080   .data
+000000b3   .text
+ffffffff   ___binit__
+00000060   ___bss__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+00000080   ___data__
+000000b3   ___edata__
+00000061   ___end__
+000000ce   ___etext__
+ffffffff   ___pinit__
+000000b3   ___text__
+00000000   __lflags
+000000b3   _c_int00
+ffffffff   binit
+ffffffff   cinit
+000000b3   edata
+00000061   end
+000000ce   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000060   ___bss__
+00000060   .bss
+00000061   end
+00000061   ___end__
+00000080   ___data__
+00000080   .data
+000000b3   ___text__
+000000b3   _c_int00
+000000b3   .text
+000000b3   edata
+000000b3   ___edata__
+000000ce   etext
+000000ce   ___etext__
+ffffffff   ___c_args__
+ffffffff   ___binit__
+ffffffff   pinit
+ffffffff   ___cinit__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   cinit
+
+[21 symbols]

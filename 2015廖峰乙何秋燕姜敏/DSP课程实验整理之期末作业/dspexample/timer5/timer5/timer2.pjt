@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\a_often\DSP program\timer5\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="timer2.asm"
+Source="Timer_Vectors.asm"
+Source="timer2.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\timer2.map" -o".\Debug\timer2.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\timer2.map" -o".\Release\timer2.out" -w -x
+
+["timer2.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["timer2.cmd" Settings: "Release"]
+LinkOrder=1
+
